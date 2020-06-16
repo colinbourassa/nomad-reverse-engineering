@@ -1,9 +1,9 @@
-ovr090:00AC ; ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ S	U B R O	U T I N	E ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ
+ovr090:00AC ; --------------- S	U B R O	U T I N	E ---------------------------------------
 ovr090:00AC
 ovr090:00AC ; Attributes: bp-based frame
 ovr090:00AC
-ovr090:00AC sub_5712C	    proc far		    ; CODE XREF: sub_3D0AFJ
-ovr090:00AC					    ; sub_57922+C3p
+ovr090:00AC sub_5712C	    proc far		    ; CODE XREF: sub_3D0AF
+ovr090:00AC					    ; sub_57922+C3
 ovr090:00AC
 ovr090:00AC var_4	    = dword ptr	-4
 ovr090:00AC arg_0	    = byte ptr	6
@@ -41,19 +41,19 @@ ovr090:00EC		    pop	    di
 ovr090:00ED		    pop	    si
 ovr090:00EE		    leave
 ovr090:00EF		    retf    6
-ovr090:00F2 ; ДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД
+ovr090:00F2 ; ---------------------------------------------------------------------------
 ovr090:00F2
-ovr090:00F2 loc_57172:				    ; CODE XREF: sub_5712C+2Aj
-ovr090:00F2					    ; sub_5712C+3Bj
+ovr090:00F2 loc_57172:				    ; CODE XREF: sub_5712C+2A
+ovr090:00F2					    ; sub_5712C+3B
 ovr090:00F2		    les	    bx,	[bp+var_4]
 ovr090:00F5		    mov	    cx,	es:[bx+2]
 ovr090:00F9		    mov	    al,	[bp+arg_4]
 ovr090:00FC		    mov	    ah,	0
 ovr090:00FE		    mov	    di,	ax
 ovr090:0100		    jmp	    short loc_571D2
-ovr090:0102 ; ДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД
+ovr090:0102 ; ---------------------------------------------------------------------------
 ovr090:0102
-ovr090:0102 loc_57182:				    ; CODE XREF: sub_5712C+A8j
+ovr090:0102 loc_57182:				    ; CODE XREF: sub_5712C+A8
 ovr090:0102		    mov	    ax,	cx
 ovr090:0104		    shl	    ax,	2
 ovr090:0107		    add	    ax,	0
@@ -74,27 +74,27 @@ ovr090:012F		    jge	    short loc_571BA
 ovr090:0131		    mov	    al,	[bp+arg_2]
 ovr090:0134		    add	    es:[bx+1], al
 ovr090:0138		    jmp	    short loc_571D6
-ovr090:013A ; ДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД
+ovr090:013A ; ---------------------------------------------------------------------------
 ovr090:013A
-ovr090:013A loc_571BA:				    ; CODE XREF: sub_5712C+83j
+ovr090:013A loc_571BA:				    ; CODE XREF: sub_5712C+83
 ovr090:013A		    les	    bx,	[bp+var_4]
 ovr090:013D		    mov	    byte ptr es:[bx+1],	0FFh
 ovr090:0142		    jmp	    short loc_571D6
-ovr090:0144 ; ДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД
+ovr090:0144 ; ---------------------------------------------------------------------------
 ovr090:0144
-ovr090:0144 loc_571C4:				    ; CODE XREF: sub_5712C+71j
+ovr090:0144 loc_571C4:				    ; CODE XREF: sub_5712C+71
 ovr090:0144		    cmp	    dl,	[bp+arg_0]
 ovr090:0147		    ja	    short loc_571D6
 ovr090:0149		    mov	    di,	cx
 ovr090:014B		    les	    bx,	[bp+var_4]
 ovr090:014E		    mov	    cx,	es:[bx+2]
 ovr090:0152
-ovr090:0152 loc_571D2:				    ; CODE XREF: sub_5712C+54j
+ovr090:0152 loc_571D2:				    ; CODE XREF: sub_5712C+54
 ovr090:0152		    or	    cx,	cx
 ovr090:0154		    jnz	    short loc_57182
 ovr090:0156
-ovr090:0156 loc_571D6:				    ; CODE XREF: sub_5712C+8Cj
-ovr090:0156					    ; sub_5712C+96j ...
+ovr090:0156 loc_571D6:				    ; CODE XREF: sub_5712C+8C
+ovr090:0156					    ; sub_5712C+96 ...
 ovr090:0156		    les	    bx,	[bp+var_4]
 ovr090:0159		    mov	    al,	es:[bx]
 ovr090:015C		    cmp	    al,	[bp+arg_0]
@@ -106,9 +106,9 @@ ovr090:016A		    add	    ax,	0
 ovr090:016D		    mov	    word ptr [bp+var_4+2], seg seg053
 ovr090:0172		    mov	    word ptr [bp+var_4], ax
 ovr090:0175		    jmp	    short loc_5722B
-ovr090:0177 ; ДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД
+ovr090:0177 ; ---------------------------------------------------------------------------
 ovr090:0177
-ovr090:0177 loc_571F7:				    ; CODE XREF: sub_5712C+103j
+ovr090:0177 loc_571F7:				    ; CODE XREF: sub_5712C+103
 ovr090:0177		    les	    bx,	[bp+var_4]
 ovr090:017A		    cmp	    byte ptr es:[bx+1],	0
 ovr090:017F		    jnz	    short loc_57226
@@ -126,27 +126,27 @@ ovr090:019A		    mov	    al,	[bp+arg_0]
 ovr090:019D		    mov	    es:[bx], al
 ovr090:01A0		    mov	    es:[bx+2], cx
 ovr090:01A4		    jmp	    short loc_57231
-ovr090:01A6 ; ДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД
+ovr090:01A6 ; ---------------------------------------------------------------------------
 ovr090:01A6
-ovr090:01A6 loc_57226:				    ; CODE XREF: sub_5712C+D3j
+ovr090:01A6 loc_57226:				    ; CODE XREF: sub_5712C+D3
 ovr090:01A6		    inc	    si
 ovr090:01A7		    add	    word ptr [bp+var_4], 4
 ovr090:01AB
-ovr090:01AB loc_5722B:				    ; CODE XREF: sub_5712C+C9j
+ovr090:01AB loc_5722B:				    ; CODE XREF: sub_5712C+C9
 ovr090:01AB		    cmp	    si,	0A00h
 ovr090:01AF		    jl	    short loc_571F7
 ovr090:01B1
-ovr090:01B1 loc_57231:				    ; CODE XREF: sub_5712C+F8j
+ovr090:01B1 loc_57231:				    ; CODE XREF: sub_5712C+F8
 ovr090:01B1		    cmp	    si,	0A00h
 ovr090:01B5		    jnz	    short loc_57247
-ovr090:01B7		    push    98h	; ''
+ovr090:01B7		    push    98h
 ovr090:01BA		    push    1EC0h
 ovr090:01BD		    push    1
 ovr090:01BF		    call    sub_31A90
 ovr090:01C4		    add	    sp,	6
 ovr090:01C7
-ovr090:01C7 loc_57247:				    ; CODE XREF: sub_5712C+B3j
-ovr090:01C7					    ; sub_5712C+109j
+ovr090:01C7 loc_57247:				    ; CODE XREF: sub_5712C+B3
+ovr090:01C7					    ; sub_5712C+109
 ovr090:01C7		    cmp	    word_45198,	0
 ovr090:01CC		    jnz	    short loc_5729A
 ovr090:01CE		    mov	    al,	[bp+arg_4]
@@ -161,7 +161,7 @@ ovr090:01E2		    inc	    byte ptr es:[bx+1]
 ovr090:01E7		    mov	    ah,	0
 ovr090:01E9		    or	    ax,	ax
 ovr090:01EB		    jnz	    short loc_57291
-ovr090:01ED		    push    9Ch	; 'њ'
+ovr090:01ED		    push    9Ch
 ovr090:01F0		    push    1EC0h
 ovr090:01F3		    push    0
 ovr090:01F5		    call    sub_31A90
@@ -174,14 +174,14 @@ ovr090:0208		    mov	    bx,	ax
 ovr090:020A		    mov	    es,	dx
 ovr090:020C		    dec	    byte ptr es:[bx+1]
 ovr090:0211
-ovr090:0211 loc_57291:				    ; CODE XREF: sub_5712C+13Fj
+ovr090:0211 loc_57291:				    ; CODE XREF: sub_5712C+13F
 ovr090:0211		    mov	    al,	[bp+arg_4]
 ovr090:0214		    push    ax
 ovr090:0215		    nop
 ovr090:0216		    push    cs
 ovr090:0217		    call    near ptr sub_576A6
 ovr090:021A
-ovr090:021A loc_5729A:				    ; CODE XREF: sub_5712C+120j
+ovr090:021A loc_5729A:				    ; CODE XREF: sub_5712C+120
 ovr090:021A		    mov	    ax,	word_45198
 ovr090:021D		    pop	    di
 ovr090:021E		    pop	    si
