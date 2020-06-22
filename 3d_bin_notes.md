@@ -8,7 +8,8 @@ The three sections of the .BIN files are:
 * Polygon definitions, each one containing:
     * Coordinates of a point to define a normal vector (three signed 16-bit words)
     * Two words who purpose is currently unknown
-    * Vertex count
+    * Vertex count (note that this count is only 7-bit; the eighth bit may also be set but its purpose is unknown)
+    * Color index for this polygon (using the first eight colors of the EGA palette)
     * IDs of vertices
 * Vertex definitions (three signed 16-bit words for each)
 
