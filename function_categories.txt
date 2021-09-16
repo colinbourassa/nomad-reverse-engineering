@@ -1,0 +1,68 @@
+* Borland C/C++ FBOV overlay management
+* Extended memory manager detection / operation
+* Configuration file parsing
+* Internal buffer management
+* Archive file library functions (reading, decompressing .DAT contents)
+* Game saving/loading
+* Main executive loop
+* Sound support
+:* Decompressing stored DPCM data
+:* Sound Blaster DSP setup, DMA configuration, and PCM data buffer management
+:* Disney Sound Source / Covox Speech Thing setup
+* Switchable VGA/EGA support
+* User input processing
+::* Keyboard scan code to character mapping
+::* Mouse position filtering
+::* Cursor drawing
+* Graphics operations
+:* Palette loading, writing to VGA, fading, cycling
+:* Basic geometric drawing (points, lines, arcs, rectangles, ellipses, circles)
+:* Font loading and drawing
+::* String width/height computation based on glyph size
+:* Stamp image (.STP) loading, decoding, and display
+:* Delta animation frame (.DEL) loading, decoding, and display
+:* 3D ship model loading and processing
+:* Rendering elements to node buffer entries
+::* Backdrop image
+::* Starfield background
+::* Point particles for planet approach
+::* Texture-mapped planet
+::* Combat flight point particles
+::* Combat sprites (shield strikes and explosions)
+::* 3D ship models
+::* Window/dialog boxes
+:* Damage effects (screen cracking, color flash)
+:* Rendering node buffer content to video RAM
+:* Fractal planet terrain drawing
+* Window and dialog boxes
+:* Widget drawing and behavior logic
+::* Checkbox, list box, pushbutton, radio button, spin button, text area, text box, text editor
+::* Navigation starmap
+::* Radar/PPI scope
+:* Routing user input to controls
+:* Focusing/defocusing, enabling/disabling, tab order
+* Cinematic/cutscene sequences
+:* Full-screen raw VGA image display
+:* Scripted 3D ship flight (e.g. labor bot deployment, trading sequence)
+* Demo recording (unused)
+* Game mechanics
+:* Alien conversation
+:* Alien ship behavior for flight and combat
+:* Alien temperament management
+:* Alliance mission handling/tracking
+:* Combat actions
+::* Player free flight
+::* Missile loading and targeting
+::* Missile homing and hit detection
+::* Ship system damage
+:* Data table lookup for characteristics of aliens, ships, planets, and items
+:* Labor bot management
+:* Losten gateway operations
+:* Rendering of game text ("rtext") and processing embedded triggers
+:* Player's ship system upgrades
+:* Ship and planet scanning
+:* Trading items
+:* Miscellaneous periodic service routines
+::* Enemy missile store replenishment
+::* Labor bot harvesting
+::* Ship system repair
