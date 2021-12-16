@@ -8,6 +8,10 @@ This repository contains an IDA database that documents the functions and data s
 
 The initial disassembly was done with IDA Freeware 5.0, obtained via the [ScummVM project hosting](https://www.scummvm.org/news/20180331/). This version of IDA is generally regarded as ideal for DOS-era MZ executables, as support for the MZ format was dropped in version 6.0. However, it appears to be possible to import version 5 databases into IDA 6.x, from where it can be saved and imported into IDA 7.x. This may be a useful strategy if there are any features of more recent IDA releases that would be helpful in this reversing effort.
 
+This repo currently contains two copies of the database: ``nomad_ida400.idb`` for the older version that is used by IDA through version 5.x, and ``nomad_ida700.idb`` for IDA 7.x. At the moment, they are in sync. I'm hoping that we can eventually transition to some analysis tool that has a native Linux build (whether this is Ghidra, a newer version of IDA, or something else entirely.) I'm keeping both database versions around for now, in case anyone using IDA 5.0 wants to contribute to the project.
+
+Note that upgrading the IDA database version seems to require opening the IDB file in a newer version of the **32-bit** IDA. The 64-bit builds won't recognize the .idb format.
+
 ## Executable layout and function categories
 
 The many functions in the game's executable can be organized into the categories listed below. Note that *Nomad* does not use a 32-bit DOS extender, instead relying on the "FBOV" overlay mechanism provided by the Borland compiler suite.
