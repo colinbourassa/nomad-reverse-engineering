@@ -6,11 +6,9 @@ This repository contains an IDA database that documents the functions and data s
 
 ## Tools
 
-The initial disassembly was done with IDA Freeware 5.0, obtained via the [ScummVM project hosting](https://www.scummvm.org/news/20180331/). This version of IDA is generally regarded as ideal for DOS-era MZ executables, as support for the MZ format was dropped in version 6.0. However, it appears to be possible to import version 5 databases into IDA 6.x, from where it can be saved and imported into IDA 7.x. This may be a useful strategy if there are any features of more recent IDA releases that would be helpful in this reversing effort.
+The initial disassembly was done with IDA Freeware 5.0, obtained via the [ScummVM project hosting](https://www.scummvm.org/news/20180331/). This version of IDA is generally regarded as ideal for DOS-era MZ executables, as support for the MZ format was dropped in version 6.0. However, it is possible to import version 5 databases into IDA 6.x, from where they can be saved and then imported into IDA 7.x. This repo currently contains two versions of the IDA database: ``nomad_ida400.idb`` for the older version that is used by IDA through version 5.x, and ``nomad_ida700.idb`` for IDA 7.x. At the moment, they are in sync. I'm hoping that we can eventually transition to an open-source analysis tool such as Ghidra (see below). Note that opening an IDB database requires a **32-bit** IDA. The 64-bit builds don't recognize the IDB format.
 
-This repo currently contains two copies of the database: ``nomad_ida400.idb`` for the older version that is used by IDA through version 5.x, and ``nomad_ida700.idb`` for IDA 7.x. At the moment, they are in sync. I'm hoping that we can eventually transition to some analysis tool that has a native Linux build (whether this is Ghidra, a newer version of IDA, or something else entirely.) I'm keeping both database versions around for now, in case anyone using IDA 5.0 wants to contribute to the project.
-
-Note that upgrading the IDA database version seems to require opening the IDB file in a newer version of the **32-bit** IDA. The 64-bit builds won't recognize the .idb format.
+Additionally, this repo contains an XML representation of the database (``nomad_ghidra.xml``), generated with the help of IDA plugins provided by the [Ghidra](https://github.com/NationalSecurityAgency/ghidra) project. This file is intended to provide a means to migrate from IDA to Ghidra, and can be imported into the latter.
 
 ## Executable layout and function categories
 
