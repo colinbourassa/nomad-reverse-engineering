@@ -6,7 +6,7 @@ This repository contains an annotated IDA database that documents the functions 
 
 ## Tools
 
-The initial disassembly was done with IDA Freeware 5.0, obtained via the [ScummVM project hosting](https://www.scummvm.org/news/20180331/). This version of IDA is generally regarded as ideal for DOS-era MZ executables, as support for the MZ format was dropped in version 6.0. However, it is possible to import version 5 databases into IDA 6.x, from where they can be saved and then imported into IDA 7.x. This repo currently contains two versions of the IDA database: ``nomad_ida400.idb`` for the older version that is used by IDA through version 5.x, and ``nomad_ida700.idb`` for IDA 7.x. At the moment, they are in sync. I'm hoping that we can eventually transition to an open-source analysis tool such as Ghidra (see below). Note that opening an IDB database requires a **32-bit** IDA. The 64-bit builds don't recognize the IDB format.
+The initial disassembly was done with IDA Freeware 5.0, obtained via the [ScummVM project hosting](https://www.scummvm.org/news/20180331/). This version of IDA is generally regarded as ideal for DOS-era MZ executables, as support for the MZ format was dropped in version 6.0. However, it is possible to import version 5 databases into IDA 6.x, from where they can be saved and then imported into IDA 7.x. Note that opening an IDB database requires a **32-bit** IDA. The 64-bit builds don't recognize the IDB format.
 
 Although I would like to transition this effort to Ghidra, there is currently no straightforward migration path from the old 32-bit .IDB databases. Even loading/analyzing the binary is problematic, as Ghidra doesn't yet have support for parsing the Borland FBOV overlay section.
 
